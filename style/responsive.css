@@ -1,0 +1,32 @@
+@media (max-width: 576px) {
+
+}
+
+@media (max-width: 768px) {
+    .header-btn{
+        display: none;
+    }
+    .header__toggle{
+        display: block;
+    }
+    .header-menu__item{
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-btn__create{
+        display: none;
+    }
+    .header-btn{
+        justify-content: end;
+    }
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 1400px) {
+
+}

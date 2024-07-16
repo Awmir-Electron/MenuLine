@@ -1,0 +1,200 @@
+/*
+    -- Basic --
+*/
+
+:root{
+    --purple: #5957F8;
+    --dark-blue : #060047;
+}
+
+*{
+    padding:0;
+    margin:0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-family: IRANYekanBold, sans-serif;
+    font-size: 1.6rem;
+    direction: rtl;
+}
+
+a{
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+/*
+    Helper Class
+*/
+
+.align-items-center {
+    align-items: center;
+}
+
+.btn{
+    color: #fff;
+    background-color: var(--purple);
+    padding: 2.5rem 3.5rem;
+    display: inline-block;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 .5rem var(--purple);
+    text-align: center;
+}
+
+/*
+    -- Header --
+*/
+
+.header{
+    margin-top: 3rem;
+}
+
+/*
+    Header Logo
+*/
+
+.header-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo__img{
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 1.5rem;
+    background-color: var(--purple);
+    box-shadow: 0 0 .5rem var(--purple);
+}
+
+.header-logo__text-wrapper{
+    margin-right: 1.5rem;
+}
+
+.header-logo__text{
+    color: var(--purple);
+    font-size: 3rem;
+    text-shadow: 0 0 .2rem var(--purple);
+
+}
+
+.header-logo__sub-text{
+    display: block;
+    margin: .5rem;
+    font-size: 1.3rem;
+    font-family: IRANYekanFNSemiBold,sans-serif;
+    color: var(--dark-blue);
+}
+
+/*
+    Header Menu
+*/
+
+.header-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.header-menu__item{
+    position: relative;
+}
+
+.header-menu__item::before,.header-menu__item::after{
+    position: absolute;
+    content: '';
+    bottom: -0.6rem;
+    width: 1%;
+    visibility: hidden;
+    height: 2px;
+    border-radius: .5rem;
+    background-color: #5957F8;
+    transition: .3s all;
+}
+.header-menu__item::after{
+    right: 0;
+}
+.header-menu__item::before{
+    left: 0;
+}
+.header-menu__item:hover::after,.header-menu__item:hover::before{
+    width: 51%;
+    visibility: visible;
+    transition: .3s all;
+}
+
+
+.header-menu__link{
+
+}
+
+/*
+    Header Btn
+*/
+
+.header__toggle{
+    display: none;
+    justify-content: end;
+}
+
+.header__line{
+    position: relative;
+    display: block;
+    width: 3.5rem;
+    height: .4rem;
+    background-color: var(--purple);
+    border-radius: 1rem;
+}
+.header__line::before,.header__line::after{
+    position: absolute;
+    content: '';
+    width: 3.5rem;
+    height: .4rem;
+    background-color: var(--purple);
+    border-radius: 1rem;
+}
+.header__line::before{
+    top: 1rem;
+}
+.header__line::after{
+    bottom: 1rem;
+}
+
+.header-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-btn__login{
+    padding: 2rem 3rem;
+    background-color: rgba(6, 0, 71, 0.05);
+    border-radius: 1.5rem;
+    display: inline-block;
+}
+
+.header-btn__logo{
+
+}
+
+.header-btn__create{
+
+}
+
+
+
+
+
+
+
+
+

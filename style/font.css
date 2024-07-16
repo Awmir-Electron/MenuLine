@@ -1,0 +1,14 @@
+@font-face {
+    font-family: IRANYekanBold;
+    src: url("../fonts/YekanBakhFaNum-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: IRANYekanFNLight;
+    src: url("../fonts/YekanBakhFaNum-Light.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: IRANYekanFNSemiBold;
+    src: url("../fonts/YekanBakhFaNum-SemiBold.woff2") format("woff2");
+}
