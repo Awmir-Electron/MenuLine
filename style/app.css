@@ -20,6 +20,7 @@ html{
 }
 
 body {
+    position: relative;
     font-family: IRANYekanBold, sans-serif;
     font-size: 1.6rem;
     direction: rtl;
@@ -96,6 +97,14 @@ a{
 /*
     Header Menu
 */
+
+.header__mobile-menu-wrapper{
+
+}
+
+.header-mobile__logo{
+    display: none;
+}
 
 .header-menu{
     display: flex;
@@ -190,6 +199,27 @@ a{
 
 }
 
+/*
+   Mobile Btn
+*/
+
+.header-btn--mobile{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mobile-btn__login{
+    padding: 2rem 3rem;
+    background-color: rgba(6, 0, 71, 0.05);
+    border-radius: 1.5rem;
+    display: inline-block;
+}
+
+.mobile-btn__create{
+
+}
 
 
 

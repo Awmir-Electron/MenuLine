@@ -1,5 +1,7 @@
 @media (max-width: 576px) {
-
+    .header-btn--mobile{
+        margin: 0 2rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -7,10 +9,38 @@
         display: none;
     }
     .header__toggle{
+        display: flex;
+    }
+    .header__mobile-menu-wrapper{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-color:  chartreuse;
+        min-width: 85%;
+        min-height: 100%;
+        padding: 3rem 5rem 3rem 0;
+    }
+    .header-menu{
+        flex-direction: column;
+        align-items: normal;
+        margin: 6rem 0;
+        gap: 5rem;
+    }
+    .header-logo{
+        justify-content: normal;
+    }
+    .header-mobile__logo{
         display: block;
     }
+    .header-btn--mobile{
+        display: flex;
+    }
     .header-menu__item{
-        display: none;
+        display: block;
+        border-bottom: 1px solid red;
+        padding-bottom: 3rem;
+        margin-left: 3rem;
     }
 }
 
