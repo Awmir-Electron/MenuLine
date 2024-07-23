@@ -31,6 +31,17 @@ a{
     color: var(--dark-blue);
 }
 
+.cover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: .2s all;
+}
+
 /*
     Helper Class
 */
@@ -42,7 +53,7 @@ a{
 .btn{
     color: #fff;
     background-color: var(--purple);
-    padding: 2.5rem 3.5rem;
+    padding: 2rem 3rem;
     display: inline-block;
     border-radius: 1.5rem;
     box-shadow: 0 0 .5rem var(--purple);
@@ -64,7 +75,7 @@ a{
 .header-logo{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .header-logo__img{
@@ -185,7 +196,7 @@ a{
 }
 
 .header-btn__login{
-    padding: 2rem 3rem;
+    padding: 1.4rem 3rem;
     background-color: rgba(6, 0, 71, 0.05);
     border-radius: 1.5rem;
     display: inline-block;
@@ -205,25 +216,66 @@ a{
 
 .header-btn--mobile{
     display: none;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 1rem;
+    margin-left: 4rem;
 }
 
 .mobile-btn__login{
-    padding: 2rem 3rem;
+    padding: 1rem 1.5rem;
+    background-color: rgba(6, 0, 71, 0.05);
+    border-radius: 1.5rem;
+    display: inline-block;
+    margin-left: 3rem;
+}
+
+.mobile-btn__create{
+    font-size: 1.1rem;
+}
+
+.header-logo__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-btn__login-user{
+    padding: 1.1rem 3rem;
     background-color: rgba(6, 0, 71, 0.05);
     border-radius: 1.5rem;
     display: inline-block;
 }
 
-.mobile-btn__create{
-
+.header-mobile__social{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 2rem 2rem;
+    display: flex;
+    gap: 1rem;
 }
 
+.mobile-btn__social:first-child{
+    background-color: #1493DF;
+    box-shadow: 0 0 1rem #1493DF!important;
+}
 
+.header-mobile__social{
+    display: none;
+}
 
+.mobile-btn__social{
+    padding: 1rem 1.7rem;
+    background-color: #21C47F;
+    border-radius: 2rem;
+    display: inline-block;
+    box-shadow: 0 0 1rem #21C47F;
+}
 
+.telegram__icon{
+    scale: 1.8;
+}
 
 
 
