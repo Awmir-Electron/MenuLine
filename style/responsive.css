@@ -3,6 +3,7 @@
 }
 
 @media (max-width: 768px) {
+    /* Header */
     .header-btn{
         display: none;
     }
@@ -43,21 +44,49 @@
     .header-menu__item::after,.header-menu__item::before{
         display: none;
     }
+    .header-logo{
+        justify-content: space-between;
+    }
+    /* Hero Section */
+
 }
 
 @media (max-width: 992px) {
+    /* Header */
     .header-btn__create{
         display: none;
     }
     .header-btn{
         justify-content: end;
     }
+    /* Hero Section */
+    .hero-section__img{
+        max-width: 31rem;
+        max-height: 31rem;
+    }
+    .hero-section__barcode{
+        width: 12rem;
+        height: 4.5rem;
+        left: -1rem!important;
+        bottom: 8rem!important;
+    }
 }
 
 @media (max-width: 1200px) {
-
+    /* Hero Section */
+    .hero-section__img{
+        width: 42rem;
+        height: 46rem;
+    }
+    .hero-section__barcode{
+        left: -1rem;
+        bottom: 7rem;
+    }
 }
 
 @media (max-width: 1400px) {
-
+    .hero-section__barcode{
+        bottom: 9rem;
+        left: 0;
+    }
 }
