@@ -3,6 +3,17 @@
     .description__text,.description__sub-title{
         line-height: 1.4;
     }
+    /*  Comment Section  */
+    .comment-item__name{
+        font-size: 1.2rem;
+    }
+    .comment-item__post{
+        font-size: 1rem;
+    }
+    .comment__star{
+        width: 2rem;
+        height: 2rem;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -21,6 +32,17 @@
     /*  Description Section  */
     .description__video{
         margin-top: 4rem;
+    }
+    /*  Comment Section  */
+    .comment-item__name{
+        font-size: 1.6rem;
+    }
+    .comment-item__post{
+        font-size: 1.2rem;
+    }
+    .comment__star{
+        width: 2.5rem;
+        height: 2.5rem;
     }
 }
 
@@ -90,12 +112,40 @@
     .description__video{
         margin-top: 0;
     }
+    .description__text{
+        line-height: 2;
+    }
     /*  FAQ Section  */
     .faq-question{
         font-size: 1.6rem;
     }
     .faq-description{
         font-size: 1.4rem;
+    }
+    /*  Comment Section  */
+    .comment-item__name{
+        font-size: 1.2rem;
+    }
+    .comment-item__post{
+        font-size: 1rem;
+    }
+    .comment__star{
+        width: 2rem;
+        height: 2rem;
+    }
+    .comment__title{
+        font-size: 2.5rem;
+    }
+    .comment__subtitle{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 808px) {
+    /*  Comment Section  */
+    .comment__star{
+        width: 1.5rem;
+        height: 1.5rem;
     }
 }
 
@@ -216,6 +266,32 @@
     .footer-copyright-mobile{
         display: flex;
     }
+    /*  Comment Section  */
+    .comment-item__name{
+        font-size: 1.6rem;
+    }
+    .comment-item__post{
+        font-size: 1.6rem;
+    }
+    .comment__title{
+        font-size: 4rem;
+    }
+    .comment__subtitle{
+        font-size: 1.8rem;
+        display: block;
+        margin-top: 1.5rem;
+    }
+    .comment__header{
+        display: block;
+        text-align: center;
+    }
+    .comment__star{
+        width: 2rem;
+        height: 2rem;
+    }
+    .comment-item{
+        max-width: 65rem;
+    }
 }
 
 @media (max-width: 576px) {
@@ -236,6 +312,34 @@
 
     .feature-section__itemRight {
         right: max(calc(17rem * 7), calc(100% + 17rem));
+    }
+    /*  Comment Section  */
+    .comment__title{
+        font-size: 3rem;
+    }
+    .comment__subtitle{
+        font-size: 1.4rem;
+    }
+    .comment__star{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .comment__slider{
+        left: 2rem;
+        right: 2rem;
+    }
+    .comment__description{
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    /*  Comment Section  */
+    .comment-item__name{
+        font-size: 1.2rem;
+    }
+    .comment-item__post{
+        font-size: 1rem;
     }
 }
 

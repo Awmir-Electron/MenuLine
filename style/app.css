@@ -6,6 +6,7 @@
     --purple: #5957F8;
     --dark-blue : #060047;
     --green : #16CB69;
+    --black : #2A2D53;
 }
 
 *{
@@ -86,7 +87,8 @@ a{
 }
 
 .green{
-    color: var(--green);
+    color: var(--green) !important;
+    text-shadow: .5rem .5rem 1rem rgba(22, 203, 105, 0.3) !important;
 }
 
 .mt-1{
@@ -108,6 +110,10 @@ a{
 
 .bg-tans{
     background-color: transparent!important;
+}
+
+.bg-green{
+    background-color: #37CA8C !important;
 }
 
 .border{
@@ -352,10 +358,6 @@ a{
 
 }
 
-/*
-   ** Hero Section => Content **
-*/
-
 .hero-section__content{
     margin-top: 1rem;
 }
@@ -410,10 +412,6 @@ a{
     color: var(--dark-blue);
     box-shadow: 0 0 .5rem #ddd;
 }
-
-/*
-   ** Hero Section => img **
-*/
 
 .hero-section__img-wrapper{
     position: relative;
@@ -581,6 +579,189 @@ a{
 }
 
 /*
+    Plans Section
+*/
+
+.plans-section{
+    background-image: url("../image/plans/blue rectangle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 20rem 0;
+    padding-top: 5rem;
+}
+
+.plans-head{
+    text-align: center;
+    padding-bottom: 7rem;
+}
+
+.plans__title{
+    margin: 1.5rem 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 3rem;
+}
+
+.plans__subtitle{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.plans__wrapper{
+    display: flex;
+    gap: 2rem;
+    margin: 5rem 0;
+}
+
+.plans-item{
+    position: relative;
+    border-radius: 2rem;
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.plans-suggestion{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -6rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    background-color: #37CA8C;
+    padding: 3rem;
+    box-shadow: 0 1rem 10rem #37CA8C;
+}
+
+.plans-suggestion__text{
+    text-align: center;
+    color: #fff;
+}
+
+
+.plans-item__type{
+    position: relative;
+    text-align: center;
+    padding: 2rem 2rem 4rem 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.plans-item__fantasy-emoji {
+    position: absolute;
+    fill: rgba(6, 0, 71, 0.08);
+}
+
+.plans-item__fantasy-emoji:nth-child(1){
+    top: 2rem;
+    left: 3rem;
+}
+.plans-item__fantasy-emoji:nth-child(2){
+    top: 2rem;
+    right: 2rem;
+}
+.plans-item__fantasy-emoji:nth-child(3){
+    bottom: 2rem;
+    left: 2rem;
+}
+.plans-item__fantasy-emoji:nth-child(4){
+    bottom: 2rem;
+    right: 3rem;
+    transform: rotate(-30deg);
+}
+
+.plans-item__subtitle{
+    font-size: 1.4rem;
+    color: rgba(2, 0, 86, 0.58);
+}
+
+.plans-item__name{
+    font-size: 3.5rem;
+    margin-top: .8rem;
+    color: #020056;
+    text-shadow: .5rem .5rem 1rem rgba(11, 8, 132, 0.32);
+}
+
+.plans-item__price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.plans-item__time{
+    color: #060047;
+    font-size: 1.8rem;
+}
+
+.plans-item__price-wrapper{
+    display: flex;
+    align-items: center;
+    color: #020056;
+}
+
+.plans-item__price-text{
+    font-size: 4rem;
+    text-shadow: .5rem .5rem 1rem rgba(11, 8, 132, 0.32);
+}
+
+.plans-item__currency{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .2rem;
+    margin-right: .5rem;
+    font-size: 1.4rem;
+}
+
+.plans-item__currency-text1{
+
+}
+
+.plans-item__currency-text2{
+
+}
+
+.plans-item__feature{
+
+}
+
+.plans-item__feature-item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+.plans-item__feature-check{
+
+}
+
+.plans-item__feature-text{
+
+}
+
+.plans-item__btn{
+    position: absolute;
+    display: block;
+    width: 15rem;
+    height: 6rem;
+    line-height: 6rem;
+    border-radius: 2rem;
+    text-align: center;
+    color: #ffffff;
+    background: #5957F8;
+    border: 1px solid yellow;
+    left: 6.5rem;
+    right: 6.5rem;
+}
+
+
+
+
+/*
     Partner Section
 */
 
@@ -594,10 +775,131 @@ a{
     margin-bottom: 5rem;
 }
 
+/*  Comment Section    */
+
+.comment-section{
+    border-bottom-left-radius: 15rem;
+    border-bottom-right-radius: 15rem;
+    background: #25CE73;
+    width: 100%;
+    margin: 10rem 0;
+    padding-bottom: 10rem;
+}
+
+.comment-wrapper{
+    height: 25rem;
+
+}
+
+.comment__header{
+    margin: 6rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comment__title{
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.comment__subtitle{
+    color: #fff;
+}
+
+.comment__slider{
+    position: absolute;
+    left: 7rem;
+    right: 7rem;
+    top: 25rem;
+}
+
+.comment-item{
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 3rem;
+    max-width: 63rem;
+    user-select: none;
+}
+
+.comment-item__head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comment-item__Specifications{
+    display: flex;
+    align-items: center;
+}
+
+.comment-item__pic{
+
+}
+
+.comment-item__texts{
+    margin-right: 1rem;
+}
+
+.comment-item__name{
+    color:var(--black);
+}
+
+.comment-item__post{
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.37);
+    margin-top: 1rem;
+}
+
+.comment-item__stars{
+
+}
+
+.comment__star{
+    
+}
+
+.comment-bottom{
+    margin-top: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.14);
+}
+
+.comment__description{
+    color: #020056;
+    margin-top: 2rem;
+    line-height: 1.8;
+}
+
+.swiper{
+    position: static !important;
+}
+
+.swiper-button-next,.swiper-button-prev{
+    width: 5rem !important;
+    height: 5rem !important;
+    background-color: #fff !important;
+    padding: 2rem !important;
+    border-radius: 50% !important;
+    border: 1px solid #00000021 !important;
+    color: #000 !important;
+}
+
+.swiper-button-next::after,.swiper-button-prev::after{
+    font-size: 3rem !important;
+}
+
+.swiper-button-next{
+    left: -2rem !important;
+}
+.swiper-button-prev{
+    right: -2rem !important;
+}
+
+
 /*   Description Section  */
 
 .description-section{
-    margin-top: 3rem;
+    margin-top: 25rem;
     color: var(--dark-blue);
 }
 
