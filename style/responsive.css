@@ -14,6 +14,10 @@
         width: 2rem;
         height: 2rem;
     }
+    /*  Plans Section  */
+    .plans-item__feature-text {
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -43,6 +47,13 @@
     .comment__star{
         width: 2.5rem;
         height: 2.5rem;
+    }
+    /*  Plans Section  */
+    .plans-item__feature-text {
+        font-size: 16px;
+    }
+    .visibility{
+        visibility: visible;
     }
 }
 
@@ -292,26 +303,31 @@
     .comment-item{
         max-width: 65rem;
     }
+    /*  Plans Section  */
+    .plans-item__feature-text{
+        font-size: 12px !important;
+    }
 }
 
 @media (max-width: 576px) {
-    .star{
-        display: none;
-    }
+    /*  Footer  */
     .footer .header-menu__link{
         font-size: 1.4rem;
     }
     /*  Future Section  */
-    .feature-section__itemLeft,
-    .feature-section__itemRight {
-        width: 17rem;
-    }
-    .feature-section__itemLeft {
-        left: max(calc(17rem * 7), 100%);
-    }
+    /*.feature-section__itemLeft,*/
+    /*.feature-section__itemRight {*/
+    /*    width: 17rem;*/
+    /*}*/
+    /*.feature-section__itemLeft {*/
+    /*    left: max(calc(17rem * 7), 100%);*/
+    /*}*/
 
-    .feature-section__itemRight {
-        right: max(calc(17rem * 7), calc(100% + 17rem));
+    /*.feature-section__itemRight {*/
+    /*    right: max(calc(17rem * 7), calc(100% + 17rem));*/
+    /*}*/
+    .star{
+        display: none;
     }
     /*  Comment Section  */
     .comment__title{
@@ -333,13 +349,20 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 506px) {
     /*  Comment Section  */
     .comment-item__name{
         font-size: 1.2rem;
     }
     .comment-item__post{
         font-size: 1rem;
+    }
+    /*  Plans Section  */
+    .plans-item__feature-text{
+        font-size: 16px !important;
+    }
+    .plans-item__feature-item{
+        margin-right: 4rem;
     }
 }
 
@@ -405,6 +428,7 @@
 }
 
 @media (max-width: 343px) {
+    /* Hero Section */
     .hero-section__img{
         height: 45rem;
     }
