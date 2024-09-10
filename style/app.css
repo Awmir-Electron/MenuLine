@@ -429,7 +429,7 @@ a{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url("../image/hero/happyMan.png");
+    background-image: url("../image/hero/happyMan.webp");
     width: 100%;
     height: 50rem;
 }
@@ -590,7 +590,7 @@ a{
 
 .plans-section{
     position: relative;
-    background-image: url("../image/plans/BG-BLUE.png");
+    background-image: url("../image/plans/BG-BLUE.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -816,7 +816,7 @@ a{
     position: relative;
     border-bottom-left-radius: 15rem;
     border-bottom-right-radius: 15rem;
-    background: url("../image/comment/BG-GREEN.png");
+    background: url("../image/comment/BG-GREEN.webp");
     height: 72rem;
     padding-bottom: 10rem;
 }
@@ -1084,7 +1084,7 @@ a{
     left: 0;
     width: 100%;
     height: 10rem;
-    background: url("../image/footer/wave.png");
+    background: url("../image/footer/wave.webp");
     background-size: 100rem 10rem;
 }
 .wave__item-1{
@@ -1251,9 +1251,10 @@ a{
 
 .footer-pay{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .footer-pay-item{
