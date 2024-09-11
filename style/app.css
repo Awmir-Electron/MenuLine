@@ -263,7 +263,7 @@ a{
 }
 
 .header-btn__login{
-    padding: 1.4rem 3rem;
+    padding: 1rem 3rem;
     background-color: rgba(6, 0, 71, 0.05);
     border-radius: 1.5rem;
     display: inline-block;
@@ -273,8 +273,8 @@ a{
 
 }
 
-.header-btn__create{
-
+.header-btn__create {
+    padding: 1.7rem 2rem;
 }
 
 /*
@@ -765,6 +765,10 @@ a{
     margin-right: 3rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid rgb(84 81 81 / 7%);
+}
+
+.plans-item__feature-item:last-child{
+    border-bottom: none;
 }
 
 .plans-item__feature-check{
@@ -1264,20 +1268,6 @@ a{
 .footer-pay__img{
 
 }
-
-.yellow-shadow{
-    box-shadow: 0 6px 28px 0 #fcd009;
-    border-radius: 1rem;
-}
-
-.white-shadow{
-    box-shadow: 0 6px 15px 0 #fff;
-    border-radius: 1.3rem;
-}
-
-
-
-
 
 
 

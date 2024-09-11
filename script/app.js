@@ -3,8 +3,6 @@ let mobileMenu = document.querySelector('.header__mobile-menu-wrapper')
 let mobileMenuExit = document.querySelector('.mobile-btn__login')
 let cover = document.querySelector('.cover')
 let faqTop = document.querySelectorAll('.faq-top')
-let grabber = document.querySelector('.comment__slider')
-let visibility = document.querySelector('.hidden')
 
 toggle.addEventListener('click',()=>{
     {
