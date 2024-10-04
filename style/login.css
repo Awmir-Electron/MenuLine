@@ -1,0 +1,253 @@
+:root{
+    --purple: #5957F8;
+    --dark-blue : #060047;
+    --green : #16CB69;
+    --black : #2A2D53;
+}
+
+*{
+    padding:0;
+    margin:0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: IRANYekanBold, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    font-size: 1.6rem;
+    direction: rtl;
+    flex-wrap: wrap;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/*  Login */
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  Login Content    */
+
+.login-content{
+
+}
+
+.header-logo-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo__img{
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 1.5rem;
+    background-color: var(--purple);
+    box-shadow: 0 0 .5rem var(--purple);
+}
+
+.header-logo__text-wrapper{
+    margin-right: 1.5rem;
+}
+
+.header-logo__text{
+    color: var(--purple);
+    font-size: 3rem;
+    text-shadow: 0 0 .3rem var(--purple);
+    margin-left: .5rem;
+}
+
+.header-logo__sub-text{
+    display: block;
+    margin: .5rem;
+    font-size: 1.3rem;
+    font-family: IRANYekanFNSemiBold,sans-serif;
+    color: var(--dark-blue);
+}
+
+.login-content__text{
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--dark-blue);
+}
+
+.login-form{
+    margin-top: 6rem;
+    position: relative;
+}
+
+.login-form__label{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.login-form__input{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 1rem;
+    font-family: IRANYekanFNSemiBold,sans-serif;
+    margin: 1.5rem 0;
+}
+
+#timer{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 2.2rem;
+    border-right: 0;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    display: none;
+}
+
+#submit-code{
+    background-color: var(--purple);
+    cursor: pointer;
+    display: none;
+}
+
+.submit-code{
+    display: none;
+    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-left: 0;
+}
+
+.login-form__timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form__error{
+    color: #ff0000;
+    display: none;
+}
+
+.login-form__submit{
+    width: 100%;
+    color: #fff;
+    background-color: rgb(113 113 113);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 1rem;
+    font-family: IRANYekanFNSemiBold,sans-serif;
+    margin-top: 2rem;
+}
+
+.login-form__span{
+    margin-top: 2.5rem;
+    display: block;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+}
+
+.familiarity__btn{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    color: var(--dark-blue);
+    background-color: #ededed;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 1rem;
+    font-family: IRANYekanFNSemiBold,sans-serif;
+    margin-bottom: 3rem;
+    transition: .2s all;
+}
+
+.familiarity__btn:hover{
+    box-shadow: 0 0 10px #272727;
+    transition: .5s all;
+}
+
+.visitor-head-wrapper{
+    display: none;
+}
+
+.visitor{
+    position: relative;
+    top: -6rem;
+    z-index: -1;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    transition: .3s all;
+}
+
+.visitor__input{
+    position: absolute;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    font-family: IRANYekanFNSemiBold,sans-serif;
+    margin: 2rem 0;
+    border-left: none;
+    border-radius: 1rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.visitor__btn{
+    position: absolute;
+    cursor: pointer;
+    left: -6px;
+    width: 25%;
+    color: var(--purple);
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: none;
+    padding: 2rem;
+    border-radius: 1rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    font-family: IRANYekanFNSemiBold,sans-serif;
+}
+
+/* Chrome, Safari, Edge, Opera Hide Arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox Hide Arrows */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/*    Login Img    */
+
+.login__image{
+    margin-right: 15rem;
+}
+
+.login__img{
+    width: 100%;
+}
+
+.header-logo-login--mobile{
+    display: none;
+    justify-content: center;
+    margin-bottom: 3rem;
+}

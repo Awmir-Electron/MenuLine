@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>صفحه ورود | منولاین</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale = 1.0"/>
+    <link rel="icon" href="../image/logo.ico"/>
+    <link rel="stylesheet" href="../style/font.css">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/grid.css">
+    <link rel="stylesheet" href="../style/login.css"/>
+    <link rel="stylesheet" href="../style/responsive.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 col-12">
+                    <div class="login-content">
+                        <div class="header-logo-login">
+                            <img src="../image/logo.webp" alt="logo" class="header-logo__img"><!--Change logo-->
+                            <div class="header-logo__text-wrapper">
+                                <span class="header-logo__text">منولاین</span>
+                                <br>
+                                <span class="header-logo__sub-text">منو دیجیتال</span>
+                            </div>
+                        </div>
+                        <h1 class="login-content__text">ثبت نام در منولاین</h1>
+                        <form class="login-form" method="post">
+                            <label for="number" class="login-form__label">شماره تماس</label>
+                            <input type="number" class="login-form__input" placeholder="برای مثال 4785***0912" id="number"/>
+                            <span class="login-form__error">* شماره تلفن وارد شده باید 11 رقمی باشد!</span>
+                            <div class="login-form__timer">
+                                <input type="number" class="login-form__input submit-code" placeholder="کد تایید خود را وارد نمایید..."/>
+                                <span id="timer">00:59</span>
+                            </div>
+                            <input id="send-code" disabled type="button" class="login-form__submit" value="ارسال کد تایید" />
+                            <input id="submit-code" type="button" class="login-form__submit" value="ثبت کد تایید" />
+                            <div class="visitor-head-wrapper">
+                                <a aria-readonly="true" id="website" class="familiarity__btn" href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 21.75C6.07 21.75 1.25 16.93 1.25 11C1.25 5.07 6.07 0.25 12 0.25C17.93 0.25 22.75 5.07 22.75 11C22.75 16.93 17.93 21.75 12 21.75ZM12 1.75C6.9 1.75 2.75 5.9 2.75 11C2.75 16.1 6.9 20.25 12 20.25C17.1 20.25 21.25 16.1 21.25 11C21.25 5.9 17.1 1.75 12 1.75Z" fill="#737D7F"/>
+                                        <path d="M12 15.75C9.38 15.75 7.25 13.62 7.25 11C7.25 8.38 9.38 6.25 12 6.25C14.62 6.25 16.75 8.38 16.75 11C16.75 13.62 14.62 15.75 12 15.75ZM12 7.75C10.21 7.75 8.75 9.21 8.75 11C8.75 12.79 10.21 14.25 12 14.25C13.79 14.25 15.25 12.79 15.25 11C15.25 9.21 13.79 7.75 12 7.75Z" fill="#737D7F"/>
+                                        <path d="M21.17 7.74994C21.12 7.74994 21.06 7.73994 21.01 7.72994C18.07 7.08994 15.1 7.08994 12.16 7.72994C11.75 7.81994 11.36 7.55994 11.27 7.15994C11.18 6.74994 11.44 6.35994 11.84 6.26994C14.99 5.57994 18.18 5.57994 21.33 6.26994C21.73 6.35994 21.99 6.75994 21.9 7.15994C21.83 7.50994 21.52 7.74994 21.17 7.74994Z" fill="#737D7F"/>
+                                        <path d="M8.54001 13.7501C8.33001 13.7501 8.12001 13.6601 7.97001 13.4901C5.89001 11.1001 4.31001 8.37007 3.26001 5.37007L3.95001 5.06007L4.66001 4.82007L4.68001 4.88007C5.66001 7.69007 7.15001 10.2601 9.11001 12.5101C9.38001 12.8201 9.35001 13.3001 9.04001 13.5701C8.89001 13.6901 8.71001 13.7501 8.54001 13.7501Z" fill="#737D7F"/>
+                                        <path d="M10.88 21.69C10.7 21.69 10.52 21.63 10.38 21.5C10.07 21.22 10.05 20.75 10.33 20.44C12.33 18.24 13.81 15.69 14.73 12.86C14.86 12.47 15.3 12.21 15.69 12.34C16.08 12.47 16.31 12.85 16.19 13.24C15.18 16.36 13.59 19.1 11.45 21.46C11.29 21.61 11.08 21.69 10.88 21.69Z" fill="#737D7F"/>
+                                    </svg>
+                                    <span class="familiarity__text">آشنایی از طریق وب‌سایت</span>
+                                </a>
+                                <a aria-readonly="true" id="instagram" class="familiarity__btn" href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15 22.75H9C3.57 22.75 1.25 20.43 1.25 15V9C1.25 3.57 3.57 1.25 9 1.25H15C20.43 1.25 22.75 3.57 22.75 9V15C22.75 20.43 20.43 22.75 15 22.75ZM9 2.75C4.39 2.75 2.75 4.39 2.75 9V15C2.75 19.61 4.39 21.25 9 21.25H15C19.61 21.25 21.25 19.61 21.25 15V9C21.25 4.39 19.61 2.75 15 2.75H9Z" fill="#737D7F"/>
+                                        <path d="M12 16.25C9.66 16.25 7.75 14.34 7.75 12C7.75 9.66 9.66 7.75 12 7.75C14.34 7.75 16.25 9.66 16.25 12C16.25 14.34 14.34 16.25 12 16.25ZM12 9.25C10.48 9.25 9.25 10.48 9.25 12C9.25 13.52 10.48 14.75 12 14.75C13.52 14.75 14.75 13.52 14.75 12C14.75 10.48 13.52 9.25 12 9.25Z" fill="#737D7F"/>
+                                        <path d="M17 7.4999C16.87 7.4999 16.74 7.4699 16.62 7.4199C16.5 7.3699 16.39 7.2999 16.29 7.2099C16.2 7.1099 16.12 6.9999 16.07 6.8799C16.02 6.7599 16 6.6299 16 6.4999C16 6.3699 16.02 6.2399 16.07 6.1199C16.13 5.9899 16.2 5.8899 16.29 5.7899C16.34 5.7499 16.39 5.6999 16.44 5.6699C16.5 5.6299 16.56 5.5999 16.62 5.5799C16.68 5.5499 16.74 5.5299 16.81 5.5199C17.13 5.4499 17.47 5.5599 17.71 5.7899C17.8 5.8899 17.87 5.9899 17.92 6.1199C17.97 6.2399 18 6.3699 18 6.4999C18 6.6299 17.97 6.7599 17.92 6.8799C17.87 6.9999 17.8 7.1099 17.71 7.2099C17.61 7.2999 17.5 7.3699 17.38 7.4199C17.26 7.4699 17.13 7.4999 17 7.4999Z" fill="#737D7F"/>
+                                    </svg>
+                                    <span class="familiarity__text">آشنایی از طریق اینستاگرام</span>
+                                </a>
+                                <a id="visitor" class="familiarity__btn" href="#">
+                                    <svg class="svg-white" width="24" height="24" viewBox="0 0 24 24" fill="#737D7F" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="svg-white1" d="M11.97 22.75C6.04997 22.75 1.21997 17.93 1.21997 12C1.21997 6.07 6.04997 1.25 11.97 1.25C17.89 1.25 22.72 6.07 22.72 12C22.72 17.93 17.9 22.75 11.97 22.75ZM11.97 2.75C6.86997 2.75 2.71997 6.9 2.71997 12C2.71997 17.1 6.86997 21.25 11.97 21.25C17.07 21.25 21.22 17.1 21.22 12C21.22 6.9 17.07 2.75 11.97 2.75Z" fill="#737D7F"/>
+                                        <path class="svg-white2" d="M12 19.2499C9.85 19.2499 7.83 18.1999 6.6 16.4299C6.36 16.0899 6.45 15.6199 6.79 15.3899C7.13 15.1499 7.6 15.2399 7.83 15.5799C8.78 16.9399 10.34 17.7599 12 17.7599C13.66 17.7599 15.22 16.9499 16.17 15.5799C16.41 15.2399 16.87 15.1599 17.21 15.3899C17.55 15.6299 17.63 16.0899 17.4 16.4299C16.17 18.1999 14.15 19.2499 12 19.2499Z" fill="#737D7F"/>
+                                    </svg>
+                                    <span class="familiarity__text">آشنایی از طریق ویزیتور</span>
+                                </a>
+                                <div class="visitor">
+                                    <input class="visitor__input" type="number" placeholder="کد ویزیتور:" />
+                                    <input class="visitor__btn" type="button" value="ثبت کد ویزیتور" />
+                                </div>
+                            </div>
+                            <span class="login-form__span">بعد از تکمیل ثبت‌نام امکان تغییر شماره را نخواهید داشت</span>
+                        </form>
+                    </div>
+            </div>
+            <div class="col-md-6 col-12 order">
+                <div class="header-logo-login header-logo-login--mobile">
+                    <img src="../image/logo.webp" alt="logo" class="header-logo__img"><!--Change logo-->
+                    <div class="header-logo__text-wrapper">
+                        <span class="header-logo__text">منولاین</span>
+                        <br>
+                        <span class="header-logo__sub-text">منو دیجیتال</span>
+                    </div>
+                </div>
+                    <img class="login__img" src="../image/login/Group.svg" alt="login" />
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../script/login.js"></script>
+</body>
+</html>

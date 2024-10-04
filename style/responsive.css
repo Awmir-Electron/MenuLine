@@ -57,6 +57,7 @@
     }
 }
 
+
 @media (max-width: 992px) {
     /* Header */
     .header-btn__create{
@@ -128,7 +129,7 @@
     }
     /*  FAQ Section  */
     .faq-question{
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
     .faq-description{
         font-size: 1.4rem;
@@ -307,6 +308,20 @@
     .plans-item__feature-text{
         font-size: 12px !important;
     }
+    /*  Login Page  */
+    .order .header-logo-login--mobile{
+        display: flex;
+    }
+    .header-logo-login{
+        display: none;
+    }
+    .login-content{
+        margin-bottom: 10rem;
+    }
+    .order{
+        order: -1;
+        margin-top: 10rem;
+    }
 }
 
 @media (max-width: 576px) {
@@ -314,18 +329,6 @@
     .footer .header-menu__link{
         font-size: 1.4rem;
     }
-    /*  Future Section  */
-    /*.feature-section__itemLeft,*/
-    /*.feature-section__itemRight {*/
-    /*    width: 17rem;*/
-    /*}*/
-    /*.feature-section__itemLeft {*/
-    /*    left: max(calc(17rem * 7), 100%);*/
-    /*}*/
-
-    /*.feature-section__itemRight {*/
-    /*    right: max(calc(17rem * 7), calc(100% + 17rem));*/
-    /*}*/
     .star{
         display: none;
     }
